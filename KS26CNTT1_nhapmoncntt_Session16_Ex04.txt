@@ -1,0 +1,27 @@
+Bài 4: Tối ưu hóa Lưu trữ Dữ liệu Doanh nghiệp
+Phần 1: Giải pháp Kỹ thuật
+Nhóm thực hiện thiết lập tính năng Files On-Demand trên OneDrive nhằm giải quyết vấn đề lưu trữ 500GB video giám sát trong khi laptop chỉ có ổ cứng SSD 256GB.
+
+Cách thiết lập Files On-Demand:
+- Bước 1: Mở OneDrive trên máy tính và đăng nhập tài khoản.
+- Bước 2: Nhấn biểu tượng OneDrive ở thanh Taskbar, chọn Settings.
+- Bước 3: Chọn Sync and backup → Advanced settings.
+- Bước 4: Bật Files On-Demand (Save space and download files as you use them)
+- Bước 5: Mở thư mục OneDrive trong File Explorer để kiểm tra các tệp đã đồng bộ.
+Cơ chế hoạt động:
+- Dữ liệu video 500GB được lưu trên Cloud, các tệp vẫn hiển thị trong File Explorer nhưng không cần tải toàn bộ xuống SSD.
+- Khi cần xem video, người dùng nhấn đúp vào tệp để OneDrive tự động tải xuống máy tính.
+- Sau khi sử dụng xong, nhấn chuột phải vào tệp và chọn Free up space để giải phóng dung lượng ổ cứng.
+- Những tệp cần sử dụng thường xuyên có thể tải xuống trước, các tệp còn lại tiếp tục lưu trên Cloud.
+Phần 2: Báo cáo dung lượng
+1. Chứng minh hiệu quả
+- Dung lượng dữ liệu video trên Cloud là 500GB, trong khi ổ SSD laptop chỉ có 256GB.
+- Dữ liệu Cloud lớn hơn ổ SSD: 500 / 256 ≈ 1,95 lần.
+- Nếu đồng bộ toàn bộ dữ liệu về máy, dung lượng sẽ vượt quá SSD 244GB, chưa tính hệ điều hành và phần mềm.
+- Nhờ Files On-Demand, máy tính chỉ cần lưu những video thực sự được mở hoặc tải xuống, giúp tiết kiệm dung lượng và tránh đầy ổ cứng.
+Ví dụ minh họa:
+
+Nếu chỉ tải 10GB video để kiểm tra thì máy tính chỉ cần lưu 10GB dữ liệu video thay vì toàn bộ 500GB. Sau khi sử dụng, có thể chọn Free up space để giải phóng phần dung lượng này.
+2. Xử lý bẫy dữ liệu
+- Việc đồng bộ 500GB video trong một lần có thể gây nghẽn mạng Internet và làm ảnh hưởng đến những người cùng sử dụng mạng.
+
